@@ -1,5 +1,5 @@
 # R script for Monocle
-
+```
 setwd("C:/Documents/SingleCell/")
 
 source("https://bioconductor.org/biocLite.R")
@@ -85,3 +85,4 @@ Tap1_filtered <- Tap1[expressed_genes,]
 my_genes <- row.names(subset(fData(Tap1_filtered), gene_short_name %in% c("AT4G27330","AT1G02050")))
 cds_subset <- Tap1_filtered[my_genes,]
 Pseduo_plot<-plot_genes_in_pseudotime(cds_subset, nrow=3,ncol=2, color_by="State")
+```
